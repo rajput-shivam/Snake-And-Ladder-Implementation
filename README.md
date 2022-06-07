@@ -8,6 +8,6 @@ It's features:
                  if the board is 3X3, the code will generate 1 ladder and 1 snake randomly
                  if the board is 4X6, the code will generate 3 ladders and 3 snakes randomly
 3. We can have any number of players from 1 to many.
-4. I have created a function that prints the board, and all the other details like ladder, snake, and the player position.
+4. The code prints the board, and all the other details like ladder, snake, and the player position with colours.
 
              
