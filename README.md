@@ -1,6 +1,6 @@
 # Snake-And-Ladder-Implementation
-I tried to implement snake and ladder in a different way. This vesrion of Snake and Ladder is different from a conventional Snake and Ladder.</br>
-It's features:</br>
+I tried to implement snake and ladder in a different way. This version of Snake and Ladder is different from a conventional Snake and Ladder.</br>
+Its features:</br>
 1. We can have a board of any size and of any dimension.</br>
    For Example: 3X3, 10X10, 4X6, etc</br>
 2. The snakes and the ladders are generated randomly depending upon the size of the board.</br>
