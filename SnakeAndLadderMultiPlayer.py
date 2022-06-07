@@ -125,6 +125,6 @@ def Initiasation(players, boardrow, boardcol):
 
 
 players = 2
-board_row = 5
-board_col = 5
+board_row = 10
+board_col = 10
 Initiasation(players, board_row, board_col)
