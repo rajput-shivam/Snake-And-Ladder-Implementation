@@ -8,6 +8,7 @@ It's features:</br>
    For Example: if the board is 10X10, the code will generated 10 ladders and 10 snakes randomly</br>
                 if the board is 3X3, the code will generate 1 ladder and 1 snake randomly</br>
                 if the board is 4X6, the code will generate 3 ladders and 3 snakes randomly</br>
+                (As you can see in the above screenshots)
 3. We can have any number of players from 1 to many.</br>
 4. The code prints the board, and all the other details like ladder, snake, and the player position with colours.</br>
 
