@@ -11,5 +11,6 @@ It's features:</br>
                 (As you can see in the above screenshots)
 3. We can have any number of players from 1 to many.</br>
 4. The code prints the board, and all the other details like ladder, snake, and the player position with colours.</br>
+   ![alt text](images/playing1.PNG)
 
              
