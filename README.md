@@ -3,7 +3,7 @@ I tried to implement snake and ladder in a different way. This vesrion of Snake 
 It's features:</br>
 1. We can have a board of any size and of any dimension.</br>
    For Example: 3X3, 10X10, 20X10, 4x8, 1x15</br>
-   ![alt text](images/3X3.PNG)  <img scr="images/10X10.PNG">
+   ![alt text](images/3X3.PNG)  ![alt text](images/10X10.PNG
 2. The snakes and the ladders are generated randomly depending upon the size of the board.</br>
    For Example: if the board is 10X10, the code will generated 10 ladders and 10 snakes randomly</br>
                 if the board is 3X3, the code will generate 1 ladder and 1 snake randomly</br>
