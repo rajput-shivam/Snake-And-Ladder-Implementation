@@ -1,5 +1,5 @@
 # Snake-And-Ladder-Implementation
-I tried to implement snake and ladder in a different way. This vesrion of Snake and Ladder is different from a conventional Snake and Ladder.
+I tried to implement snake and ladder in a different way. This vesrion of Snake and Ladder is different from a conventional Snake and Ladder.</br>
 It's features:
 1. We can have a board of any size and of any dimension. 
    For Example: 3X3, 10X10, 20X10, 4x8, 1x15
