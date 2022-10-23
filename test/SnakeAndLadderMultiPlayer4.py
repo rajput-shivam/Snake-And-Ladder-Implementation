@@ -2,11 +2,6 @@ import math
 import random
 from colorama import Fore
 
-# returns random value between 1 and 6
-def Dice():
-    return random.randint(1,6)
-
-# makes a forward move with accordance to the dice output
 def Move(position, move, maxvalue):
     position = position + move
     if position>maxvalue:
@@ -14,7 +9,6 @@ def Move(position, move, maxvalue):
         print(Fore.RED+"Sorry, Cant Move")
     return position
 
-# generate random snake and ladders depending upon the size of the board
 def SnakeAndLadderCreation(boardsize):
     y = math.ceil(boardsize/10)
     choice = [i for i in range(3, boardsize-1)]
@@ -34,7 +28,6 @@ def SnakeAndLadderCreation(boardsize):
         gistladder = gistladder+str(ladder[i])+"->"+str(ladder[i+1])+", "        
     return {"snake":snake, "ladder":ladder, "gistsnake":gistsnake, "gistladder":gistladder}
 
-# It checks the presence of a snake or a ladder, and returns the updated position
 def SnakeAndLadderCheck(snake, ladder, position):
     oldposition = position
     for i in range(0, len(snake), 2):
@@ -51,8 +44,7 @@ def SnakeAndLadderCheck(snake, ladder, position):
     if position != oldposition:
         SnakeAndLadderCheck(snake, ladder, position)
     return position
-  
-# It creates a board of any size and prints the board with details
+    
 def BoardCreation(positions, row, col, snake, ladder):
     board = [[0 for j in range(col)] for i in range(row)]
     counter, i, j = 0, row, 0
@@ -82,12 +74,11 @@ def BoardCreation(positions, row, col, snake, ladder):
             else:
                 print(Fore.BLACK+("%02d"%board[i][j])+Fore.CYAN+counter, end="   ")
         print()
- 
-# It rolls the dice, makes the move, checks the prescence of snake or ladder, makes furthur move if present, for a player  
+        
 def MakingTheMove(i, positions, boardrow, boardcol, snakeandladder):
     print("\n\n"+Fore.WHITE+"PLAYER", i+1, end = "")
     input(Fore.WHITE+"Enter To Roll The Dice")
-    move = Dice()
+    move = random.randint(1,6)
     print(Fore.WHITE+"Dice Gave:", move, end = "")
     input(Fore.WHITE+"Enter to Move")
     positions[i] = Move(positions[i], move, boardrow*boardcol)
@@ -103,7 +94,7 @@ def MakingTheMove(i, positions, boardrow, boardcol, snakeandladder):
         return -1
     return positions[i]
     
-# It prints the basic details of the game and and calls the fucntion for making every move for every player 
+
 def Initiasation(players, boardrow, boardcol):
     print(Fore.WHITE+"-------------------------------------")
     positions = [0 for i in range(players)]
@@ -113,7 +104,7 @@ def Initiasation(players, boardrow, boardcol):
     print(Fore.WHITE+"\nBoard size:", boardrow*boardcol)
     BoardCreation(positions, boardrow, boardcol, snakeandladder["snake"], snakeandladder["ladder"])
     print(Fore.WHITE+"Snake: ", snakeandladder["gistsnake"], "\nLadder: ", snakeandladder["gistladder"])
-    print(Fore.WHITE+"\nRed->Snake \nGreen->Ladder \nBlue->Player")
+    print(Fore.WHITE+"\nRed->Snake \nGreen->Ladder \nBlue->Player Position")
     print(Fore.WHITE+"------------------------------------\n")
     while True:
         for i in range(len(positions)):
@@ -123,8 +114,7 @@ def Initiasation(players, boardrow, boardcol):
     
 
 
-
 players = 2
-board_row = 3
+board_row = 6
 board_col = 6
 Initiasation(players, board_row, board_col)
